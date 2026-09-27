@@ -25,10 +25,10 @@
     },
     "explorer.confirmDragAndDrop": false,
     "python.analysis.packageIndexDepths": [
-        [
-            "",
-            4
-        ]
+        {
+            "name": "",
+            "depth": 4
+        }
     ],
     "python.analysis.autoImportCompletions": true,
     "python.analysis.completeFunctionParens": true,
