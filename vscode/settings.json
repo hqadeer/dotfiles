@@ -1,0 +1,123 @@
+{
+    "go.testFlags": [
+        "-tags dynamic"
+    ],
+    "editor.lineNumbers": "relative",
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.color": "#a9dc7660",
+    "vim.highlightedyank.duration": 250,
+    "vim.useSystemClipboard": true,
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "g",
+                "n"
+            ],
+            "commands": [
+                "editor.action.rename"
+            ]
+        }
+    ],
+    "explorer.confirmDelete": false,
+    "redhat.telemetry.enabled": false,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "explorer.confirmDragAndDrop": false,
+    "python.analysis.packageIndexDepths": [
+        [
+            "",
+            4
+        ]
+    ],
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.completeFunctionParens": true,
+    "go.useLanguageServer": true,
+    "[go]": {
+        "editor.insertSpaces": false,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
+        "editor.suggest.snippetsPreventQuickSuggestions": false
+    },
+    "terminal.external.linuxExec": "",
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "go.toolsManagement.autoUpdate": true,
+    "terminal.integrated.scrollback": 10000,
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["g", "H"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.goToReferences",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": ["g", "p", "d"],
+            "commands": ["editor.action.peekDefinition"]
+        },
+        {
+            "before": ["g", "h"],
+            "commands": ["editor.action.showDefinitionPreviewHover"]
+        },
+        {
+            "before": ["g", "i"],
+            "commands": ["editor.action.goToImplementation"]
+        },
+        {
+            "before": ["g", "p", "i"],
+            "commands": ["editor.action.peekImplementation"]
+        },
+        {
+            "before": ["g", "q"],
+            "commands": ["editor.action.quickFix"]
+        },
+        {
+            "before": ["g", "r"],
+            "commands": ["editor.action.referenceSearch.trigger"]
+        },
+        {
+            "before": ["g", "t"],
+            "commands": ["editor.action.goToTypeDefinition"]
+        },
+        {
+            "before": ["g", "p", "t"],
+            "commands": ["editor.action.peekTypeDefinition"]
+        },
+        {
+            "before": ["g", "R"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "testing.runAtCursor",
+                    "args": [],
+                    "when": "editorTextFocus && !editorReadonly"
+                }
+            ]
+        },
+    ],
+    "workbench.colorTheme": "Default Dark Modern",
+    "terminal.integrated.inheritEnv": false,
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "remote.SSH.connectTimeout": 1800,
+    "remote.autoForwardPortsSource": "hybrid",
+    "window.autoDetectColorScheme": false,
+    "remote.SSH.reconnectionGraceTime": 28800,
+    "remote.SSH.serverShutdownTimeout": 28800,
+    "remote.SSH.maxReconnectionAttempts": null,
+    "notebook.output.textLineLimit": 60
+}
