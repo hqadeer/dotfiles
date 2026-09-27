@@ -200,6 +200,6 @@
     },
     {
         "key": "cmd+l",
-        "command": "workbench.action.chat.openAsk"
+        "command": "workbench.action.chat.toggle"
     }
 ]
